@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "projectId": "starter-example",
+  "revision": 1,
+  "model": {
+    "id": "vroid-sample-a",
+    "sha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+    "relativePath": "models/AvatorSample_A.vrm"
+  },
+  "profile": {
+    "id": "sample-a-v1",
+    "sha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+    "relativePath": "profiles/primary.json"
+  },
+  "snapshot": {
+    "rotations": {
+      "hips": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "spine": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "chest": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "upperChest": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "neck": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "head": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftEye": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightEye": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftUpperLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLowerLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftFoot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftToes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightUpperLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLowerLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightFoot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightToes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftShoulder": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftUpperArm": [
+        0,
+        0,
+        0.5877852522924731,
+        0.8090169943749475
+      ],
+      "leftLowerArm": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftHand": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightShoulder": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightUpperArm": [
+        0,
+        0,
+        -0.5877852522924731,
+        0.8090169943749475
+      ],
+      "rightLowerArm": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightHand": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftThumbMetacarpal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftThumbProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftThumbDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbMetacarpal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleDistal": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "rootPosition": [
+      0,
+      -9.350000000629688e-8,
+      0
+    ],
+    "rootRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "expressions": {
+      "neutral": 0,
+      "aa": 0,
+      "ih": 0,
+      "ou": 0,
+      "ee": 0,
+      "oh": 0,
+      "blink": 0,
+      "blinkLeft": 0,
+      "blinkRight": 0,
+      "angry": 0,
+      "relaxed": 0,
+      "happy": 0,
+      "sad": 0,
+      "Surprised": 0
+    },
+    "gaze": {
+      "target": [
+        0,
+        1.3711431081383678,
+        4
+      ],
+      "follow": 0,
+      "mode": "point"
+    },
+    "locks": [],
+    "contacts": [
+      {
+        "bone": "leftFoot",
+        "objectId": "floor",
+        "localPoint": [
+          0,
+          -0.0861217565,
+          0
+        ],
+        "worldPoint": [
+          0.0693580941748388,
+          4.163336342344337e-17,
+          -0.03135043655999999
+        ],
+        "mode": "required"
+      },
+      {
+        "bone": "rightFoot",
+        "objectId": "floor",
+        "localPoint": [
+          0,
+          -0.0861217565,
+          0
+        ],
+        "worldPoint": [
+          -0.0693580941748388,
+          4.163336342344337e-17,
+          -0.03135043656000001
+        ],
+        "mode": "required"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "id": "3236beb6-0fd1-4959-8af8-0cbb6bfde369",
+      "sourceAsset": null,
+      "frame": null,
+      "bones": [
+        "leftUpperArm",
+        "rightUpperArm"
+      ],
+      "expressionNames": [],
+      "manual": false
+    }
+  ],
+  "stage": {
+    "floorY": 0,
+    "chair": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seatWidth": 0.44,
+      "seatDepth": 0.4,
+      "seatHeight": 0.48
+    }
+  },
+  "camera": {
+    "position": [
+      2.75,
+      1.55,
+      4.3
+    ],
+    "target": [
+      0.3,
+      0.9,
+      -0.15
+    ],
+    "fov": 33,
+    "width": 1600,
+    "height": 1000
+  },
+  "lighting": {
+    "keyPosition": [
+      -2,
+      4,
+      4
+    ],
+    "keyIntensity": 2.6,
+    "fillIntensity": 1.8,
+    "keyColor": "#fff2df",
+    "fillColor": "#e4edf1",
+    "shadowSoftness": 0.45,
+    "materialMode": "reference",
+    "emitterShape": "point",
+    "beamShape": "none",
+    "background": "#d9e1df"
+  },
+  "scene": {
+    "version": 1,
+    "floorY": 0,
+    "primary": {
+      "id": "primary",
+      "name": "示例角色",
+      "visible": true,
+      "locked": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "yaw": 0,
+        "scale": 1
+      }
+    },
+    "actors": [],
+    "objects": [
+      {
+        "id": "demo-table",
+        "type": "table",
+        "name": "练习桌",
+        "visible": true,
+        "locked": false,
+        "color": "#9e987f",
+        "transform": {
+          "position": [
+            1.25,
+            0,
+            -0.55
+          ],
+          "yaw": 0,
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "id": "demo-chair",
+        "type": "chair",
+        "name": "练习椅",
+        "visible": true,
+        "locked": false,
+        "color": "#7b9183",
+        "transform": {
+          "position": [
+            0.35,
+            0,
+            -0.95
+          ],
+          "yaw": 35,
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "id": "demo-box",
+        "type": "box",
+        "name": "练习箱",
+        "visible": true,
+        "locked": false,
+        "color": "#a9906a",
+        "transform": {
+          "position": [
+            -0.72,
+            0,
+            -0.25
+          ],
+          "yaw": 15,
+          "scale": [
+            0.8,
+            1,
+            0.6
+          ]
+        }
+      }
+    ]
+  }
+}

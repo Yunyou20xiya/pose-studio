@@ -1,0 +1,166 @@
+{
+  "rotations": {
+    "chest": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "hips": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "leftFoot": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "leftLowerArm": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "leftLowerLeg": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "leftShoulder": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "leftToes": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "leftUpperArm": [
+      0,
+      0,
+      0.6293203910498374,
+      0.7771459614569709
+    ],
+    "leftUpperLeg": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rightFoot": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rightLowerArm": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rightLowerLeg": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rightShoulder": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rightToes": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rightUpperArm": [
+      0,
+      0,
+      -0.6293203910498374,
+      0.7771459614569709
+    ],
+    "rightUpperLeg": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "spine": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "upperChest": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "rootPosition": [
+    0,
+    0,
+    0
+  ],
+  "contacts": [],
+  "stage": {
+    "floorY": 0,
+    "chair": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seatWidth": 0.44,
+      "seatDepth": 0.4,
+      "seatHeight": 0.48
+    }
+  },
+  "layers": [
+    {
+      "id": "stand",
+      "sourceAsset": "stand",
+      "frame": null,
+      "bones": [
+        "chest",
+        "hips",
+        "leftFoot",
+        "leftLowerArm",
+        "leftLowerLeg",
+        "leftShoulder",
+        "leftToes",
+        "leftUpperArm",
+        "leftUpperLeg",
+        "rightFoot",
+        "rightLowerArm",
+        "rightLowerLeg",
+        "rightShoulder",
+        "rightToes",
+        "rightUpperArm",
+        "rightUpperLeg",
+        "spine",
+        "upperChest"
+      ],
+      "expressionNames": [],
+      "manual": false
+    }
+  ]
+}

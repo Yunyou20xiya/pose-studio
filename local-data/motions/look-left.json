@@ -1,0 +1,38 @@
+{
+  "rotations": {
+    "head": [
+      0,
+      0.25881904510252074,
+      0,
+      0.9659258262890683
+    ],
+    "neck": [
+      0,
+      0.10452846326765348,
+      0,
+      0.9945218953682735
+    ]
+  },
+  "gaze": {
+    "mode": "point",
+    "target": [
+      2,
+      1.5,
+      2
+    ],
+    "follow": 0
+  },
+  "layers": [
+    {
+      "id": "look-left",
+      "sourceAsset": "look-left",
+      "frame": null,
+      "bones": [
+        "head",
+        "neck"
+      ],
+      "expressionNames": [],
+      "manual": false
+    }
+  ]
+}

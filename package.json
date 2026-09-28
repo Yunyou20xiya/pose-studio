@@ -1,0 +1,30 @@
+{
+  "name": "pose-workbench",
+  "version": "0.16.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test": "node --test tests/*.test.js",
+    "start": "node scripts/start.mjs"
+  },
+  "dependencies": {
+    "three": "0.183.2",
+    "@pixiv/three-vrm": "3.5.1",
+    "@pixiv/three-vrm-animation": "3.5.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.1"
+  },
+  "license": "MIT",
+  "description": "Local pose, scene, lighting and camera workbench for AI illustration references",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yunyou20xiya/pose-studio.git"
+  },
+  "homepage": "https://github.com/Yunyou20xiya/pose-studio",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

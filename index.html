@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>角色摆姿工作台</title></head>
+<body><div id="app">
+ <header><div><span class="brand">姿态</span><span class="wordmark">POSE STUDIO</span></div><span id="status">正在准备角色…</span><button id="reconnect" class="quiet">重新连接</button></header>
+ <div class="workspace">
+  <aside id="library"><div class="work-modes"><button data-mode="shots">镜头卡片</button><button data-mode="layout" aria-pressed="true">场景</button><button data-mode="pose">动作</button><button data-mode="light">光线</button><button data-mode="hand">手部</button><button data-mode="camera">镜头</button><button data-mode="face">表情</button></div><label class="active-actor">当前角色<select id="active-actor" aria-label="正在调整的角色"></select></label><div id="shot-library" hidden></div><div id="objects"></div><div id="pose-library" hidden></div><div id="hand-library" hidden></div><div id="camera-guide" hidden><div class="eyebrow">CAMERA</div><h2>决定怎么看</h2><p class="subtle">AI 布置后，在这里微调机位与取景。</p><ol><li>移动相机，选择拍摄位置。</li><li>移动瞄准点，决定看向哪里。</li><li>调节焦距，从镜头检查画面。</li></ol><p class="subtle">18–35 mm · 广角与环境<br>50 mm · 常规取景<br>85–200 mm · 远处与细节</p><p class="subtle">保存项目会一并保存镜头；常用构图可以收藏为机位。</p></div><div id="face-guide" hidden><div class="eyebrow">EXPRESSION</div><h2>眼神与表情</h2><p class="subtle">先选当前角色，再调整眼睛与表情。</p><p class="subtle">睁眼、眯眼、闭眼可直接点选。拖动闭合程度，停在适合当前画面的瞬间。</p><p class="subtle">展开“左右眼分别调整”，可以做单眼眨眼或两眼不同的眯眼程度。</p><p class="subtle">表情会随项目保存，也可以撤销。</p></div></aside>
+  <section id="stage">
+   <div class="stage-top"><button id="toggle-library" aria-controls="library" aria-expanded="true">收起场景栏</button><span class="badge">角色工作台 · v0.16.0</span><span id="revision"></span><button id="toggle-editor" aria-controls="editor" aria-expanded="true">收起调整栏</button></div>
+   <canvas id="viewport" aria-label="角色三维视图"></canvas>
+   <div id="output-frame" hidden><span id="frame-caption"></span></div>
+   <div class="view-switch"><button id="free-view" aria-pressed="true">自由观察</button><button id="final-view" aria-pressed="false">最终取景</button></div>
+   <div class="view-toolbar"><button data-view="front">正面</button><button data-view="side">侧面</button><button data-view="back">背面</button><button data-view="detail">近看部位</button><button id="fit-avatar">查看全场</button><button id="fit-lights">查看灯位</button></div>
+   <div id="notice" role="status"></div>
+  </section>
+  <aside id="editor"><div id="shot-inspector" hidden></div><div id="object-inspector"></div><div id="hand-inspector" hidden></div><label class="part-label">调整部位<select id="region" aria-label="调整部位"></select></label><div id="panel"></div><div id="lock-state"></div></aside>
+ </div>
+ <footer><div class="row"><button id="undo">↶ 撤销</button><button id="redo">↷ 重做</button></div><select id="projects" aria-label="打开已保存项目"><option>重新打开…</option></select><div class="export-actions"><div class="row"><button id="save">保存项目</button><button id="export" class="primary">导出参考图</button></div><button id="exports-folder" class="quiet">导出文件夹</button></div></footer>
+</div><script type="module" src="/src/main.js"></script></body></html>

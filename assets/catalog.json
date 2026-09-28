@@ -1,0 +1,411 @@
+[
+  {
+    "id": "stand",
+    "name": "自然站立",
+    "tags": [
+      "站着",
+      "站姿",
+      "站好"
+    ],
+    "type": "pose",
+    "parts": [
+      "body"
+    ],
+    "sourceSkeleton": "VRM1 -> VRM0",
+    "frame": null,
+    "requires": [
+      "chest",
+      "hips",
+      "leftFoot",
+      "leftLowerArm",
+      "leftLowerLeg",
+      "leftShoulder",
+      "leftToes",
+      "leftUpperArm",
+      "leftUpperLeg",
+      "rightFoot",
+      "rightLowerArm",
+      "rightLowerLeg",
+      "rightShoulder",
+      "rightToes",
+      "rightUpperArm",
+      "rightUpperLeg",
+      "spine",
+      "upperChest"
+    ],
+    "contacts": [],
+    "thumbnail": "/api/library-images/stand-367e2402f9b7.png",
+    "file": "stand.json",
+    "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/pose/A-shape.json",
+    "sourceSha256": "c661cc39c42d7ceab3787cb3d7180ef69aeac761753069d7cb169657b6b53f21",
+    "sha256": "367e2402f9b7efc1b2c87a414ddb62606c175834df601c09e78e01a2f3dfd439",
+    "license": "MIT; upstream copyright notice retained; adaptations documented in CREDITS.md.",
+    "adaptation": "VRM1 normalized pose converted to VRM0 rest frame, arms relaxed locally.",
+    "testedModels": [
+      "vroid-sample-a"
+    ],
+    "redistribute": true,
+    "part": "body",
+    "affectedLabel": "身体姿势",
+    "qualification": "reviewed",
+    "visualReview": {
+      "assetSha256": "367e2402f9b7efc1b2c87a414ddb62606c175834df601c09e78e01a2f3dfd439",
+      "modelSha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+      "profileSha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+      "reviewedAt": "2026-09-25T21:43:13.899031+00:00",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "scope": "Clothed pose silhouette and visible support inspected on the fixed avatar. Hidden skin/cloth contact and full collisions are not certified."
+    },
+    "distributionVerification": {
+      "basis": "Pinned upstream repository MIT license; notices retained. Local adaptations described in adaptation.",
+      "licenseFile": "licenses/vrm-studio-MIT.txt",
+      "credits": "CREDITS.md"
+    }
+  },
+  {
+    "id": "weight-shift",
+    "name": "重心偏向一侧",
+    "tags": [
+      "重心",
+      "单腿承重",
+      "放松站姿"
+    ],
+    "type": "pose",
+    "part": "body",
+    "parts": [
+      "body"
+    ],
+    "sourceSkeleton": "VRM normalized reference",
+    "frame": null,
+    "requires": [
+      "hips",
+      "spine",
+      "chest",
+      "upperChest",
+      "leftUpperLeg",
+      "leftLowerLeg",
+      "leftFoot",
+      "leftToes",
+      "rightUpperLeg",
+      "rightLowerLeg",
+      "rightFoot",
+      "rightToes",
+      "leftShoulder",
+      "leftUpperArm",
+      "leftLowerArm",
+      "leftHand",
+      "rightShoulder",
+      "rightUpperArm",
+      "rightLowerArm",
+      "rightHand"
+    ],
+    "contacts": [],
+    "file": "weight-shift.json",
+    "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/pose/Standing.json",
+    "sourceFile": "source/standing.json",
+    "sourceSha256": "6660e7eef685984fae34f8b2dc44b103fa86530bd8859417e62bb197fdcadc0a",
+    "sha256": "fdc81179d9a967fa2b30e485b8954979e79c6e7e95f0922c7dc4534b2921c695",
+    "license": "MIT; upstream copyright notice retained; adaptations documented in CREDITS.md.",
+    "adaptation": "Direct normalized Standing pose conversion with legal joint projection and ground-height fitting.",
+    "affectedLabel": "身体与站位",
+    "testedModels": [
+      "vroid-sample-a"
+    ],
+    "qualification": "reviewed",
+    "redistribute": true,
+    "visualReview": {
+      "assetSha256": "fdc81179d9a967fa2b30e485b8954979e79c6e7e95f0922c7dc4534b2921c695",
+      "modelSha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+      "profileSha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+      "reviewedAt": "2026-09-25T21:43:13.899139+00:00",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "scope": "Clothed pose silhouette and visible support inspected on the fixed avatar. Hidden skin/cloth contact and full collisions are not certified."
+    },
+    "thumbnail": "/api/library-images/weight-shift-fdc81179d9a9.png",
+    "distributionVerification": {
+      "basis": "Pinned upstream repository MIT license; notices retained. Local adaptations described in adaptation.",
+      "licenseFile": "licenses/vrm-studio-MIT.txt",
+      "credits": "CREDITS.md"
+    }
+  },
+  {
+    "id": "hands-behind-head",
+    "name": "头枕双手",
+    "tags": [
+      "头枕双手",
+      "双手枕头",
+      "双手放在脑后",
+      "双手抱头",
+      "脑后抱手",
+      "放松"
+    ],
+    "type": "pose",
+    "part": "bothArms",
+    "parts": [
+      "bothArms"
+    ],
+    "requires": [
+      "leftShoulder",
+      "leftUpperArm",
+      "leftLowerArm",
+      "leftHand",
+      "rightShoulder",
+      "rightUpperArm",
+      "rightLowerArm",
+      "rightHand"
+    ],
+    "contacts": [],
+    "file": "hands-behind-head.json",
+    "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/pose/A-shape.json",
+    "sourceSha256": "c661cc39c42d7ceab3787cb3d7180ef69aeac761753069d7cb169657b6b53f21",
+    "sourceSkeleton": "Locally authored on the existing normalized VRM rig",
+    "sha256": "e431f1cd0657e91c7b45598275990488f93c8ad1c5e6a2dc850b656d23c01f86",
+    "license": "MIT; upstream copyright notice retained; adaptations documented in CREDITS.md.",
+    "adaptation": "Locally authored paired arms, fitted to the sample rig with legal rotations and head-relative palm support. Existing standing asset supplies the preview basis; not a downloaded motion.",
+    "affectedLabel": "双臂与后脑接触 · 保留站坐和手型",
+    "testedModels": [
+      "vroid-sample-a"
+    ],
+    "qualification": "reviewed",
+    "redistribute": true,
+    "thumbnail": "/api/library-images/hands-behind-head-e431f1cd0657.png",
+    "visualReview": {
+      "assetSha256": "e431f1cd0657e91c7b45598275990488f93c8ad1c5e6a2dc850b656d23c01f86",
+      "modelSha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+      "profileSha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+      "reviewedAt": "2026-09-26T02:24:44.676Z",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "scope": "Fixed sample avatar clothed silhouette and palms behind hair checked from front, side and back. Head-relative contacts tested seated and for small turns; finger interlacing and full cloth collisions are not simulated."
+    },
+    "distributionVerification": {
+      "basis": "Pinned upstream repository MIT license; notices retained. Local adaptations described in adaptation.",
+      "licenseFile": "licenses/vrm-studio-MIT.txt",
+      "credits": "CREDITS.md"
+    }
+  },
+  {
+    "id": "wave-right",
+    "name": "右手挥手示意",
+    "tags": [
+      "挥手",
+      "打招呼",
+      "招手"
+    ],
+    "type": "pose",
+    "part": "rightArm",
+    "parts": [
+      "rightArm"
+    ],
+    "sourceSkeleton": "VRM normalized reference",
+    "frame": null,
+    "requires": [
+      "rightShoulder",
+      "rightUpperArm",
+      "rightLowerArm",
+      "rightHand"
+    ],
+    "contacts": [],
+    "file": "wave-right.json",
+    "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/pose/Double%20Peace.json",
+    "sourceFile": "source/double-peace.json",
+    "sourceSha256": "d18c74ecee40d5783ec64aa9537cf962ab1608ce07c9fb1b261bb8a536637bd1",
+    "sha256": "bb0afd2c4aeffd1bf79e8b3923642cd6defaa78e94c3727374732abaccca9b99",
+    "license": "MIT; upstream copyright notice retained; adaptations documented in CREDITS.md.",
+    "adaptation": "Raised right arm extracted from Double Peace and fitted for a greeting; hand shape remains separate.",
+    "affectedLabel": "右臂与掌心方向",
+    "testedModels": [
+      "vroid-sample-a"
+    ],
+    "qualification": "reviewed",
+    "redistribute": true,
+    "visualReview": {
+      "assetSha256": "bb0afd2c4aeffd1bf79e8b3923642cd6defaa78e94c3727374732abaccca9b99",
+      "modelSha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+      "profileSha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+      "reviewedAt": "2026-09-25T21:43:13.899148+00:00",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "scope": "Clothed pose silhouette and visible support inspected on the fixed avatar. Hidden skin/cloth contact and full collisions are not certified."
+    },
+    "thumbnail": "/api/library-images/wave-right-bb0afd2c4aef.png",
+    "distributionVerification": {
+      "basis": "Pinned upstream repository MIT license; notices retained. Local adaptations described in adaptation.",
+      "licenseFile": "licenses/vrm-studio-MIT.txt",
+      "credits": "CREDITS.md"
+    }
+  },
+  {
+    "id": "look-left",
+    "name": "转头看左前方",
+    "tags": [
+      "回头",
+      "转头",
+      "看左边",
+      "左前方"
+    ],
+    "type": "pose",
+    "part": "head",
+    "parts": [
+      "head"
+    ],
+    "sourceSkeleton": "VRM normalized reference",
+    "frame": null,
+    "requires": [
+      "head",
+      "neck"
+    ],
+    "contacts": [],
+    "file": "look-left.json",
+    "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/pose/A-shape.json",
+    "sourceFile": "source/a-shape.json",
+    "sourceSha256": "c661cc39c42d7ceab3787cb3d7180ef69aeac761753069d7cb169657b6b53f21",
+    "sha256": "ad671da1504b80353894334b3c60db5f7fa3810ed655dd43260fd42bc85521c1",
+    "license": "MIT; upstream copyright notice retained; adaptations documented in CREDITS.md.",
+    "adaptation": "Locally authored head/neck adjustment on the existing normalized pose basis.",
+    "affectedLabel": "头颈与视线",
+    "testedModels": [
+      "vroid-sample-a"
+    ],
+    "qualification": "reviewed",
+    "redistribute": true,
+    "visualReview": {
+      "assetSha256": "ad671da1504b80353894334b3c60db5f7fa3810ed655dd43260fd42bc85521c1",
+      "modelSha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+      "profileSha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+      "reviewedAt": "2026-09-25T21:43:13.899151+00:00",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "scope": "Clothed pose silhouette and visible support inspected on the fixed avatar. Hidden skin/cloth contact and full collisions are not certified."
+    },
+    "thumbnail": "/api/library-images/look-left-ad671da1504b.png",
+    "distributionVerification": {
+      "basis": "Pinned upstream repository MIT license; notices retained. Local adaptations described in adaptation.",
+      "licenseFile": "licenses/vrm-studio-MIT.txt",
+      "credits": "CREDITS.md"
+    }
+  },
+  {
+    "id": "head-down",
+    "name": "低头看近处",
+    "tags": [
+      "低头",
+      "看书",
+      "向下看"
+    ],
+    "type": "pose",
+    "part": "head",
+    "parts": [
+      "head"
+    ],
+    "sourceSkeleton": "VRM normalized reference",
+    "frame": null,
+    "requires": [
+      "head",
+      "neck"
+    ],
+    "contacts": [],
+    "file": "head-down.json",
+    "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/pose/A-shape.json",
+    "sourceFile": "source/a-shape.json",
+    "sourceSha256": "c661cc39c42d7ceab3787cb3d7180ef69aeac761753069d7cb169657b6b53f21",
+    "sha256": "9dbdae8b25b084ed01b37488aa9a82641b9f5ebf7846d21fc6b70142ad34e46f",
+    "license": "MIT; upstream copyright notice retained; adaptations documented in CREDITS.md.",
+    "adaptation": "Locally authored downward head/neck adjustment on the existing normalized pose basis.",
+    "affectedLabel": "头颈与视线",
+    "testedModels": [
+      "vroid-sample-a"
+    ],
+    "qualification": "reviewed",
+    "redistribute": true,
+    "visualReview": {
+      "assetSha256": "9dbdae8b25b084ed01b37488aa9a82641b9f5ebf7846d21fc6b70142ad34e46f",
+      "modelSha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+      "profileSha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+      "reviewedAt": "2026-09-25T21:43:13.899152+00:00",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "scope": "Clothed pose silhouette and visible support inspected on the fixed avatar. Hidden skin/cloth contact and full collisions are not certified."
+    },
+    "thumbnail": "/api/library-images/head-down-9dbdae8b25b0.png",
+    "distributionVerification": {
+      "basis": "Pinned upstream repository MIT license; notices retained. Local adaptations described in adaptation.",
+      "licenseFile": "licenses/vrm-studio-MIT.txt",
+      "credits": "CREDITS.md"
+    }
+  },
+  {
+    "id": "raise-right",
+    "name": "抬右臂靠近脸",
+    "tags": [
+      "抬右手",
+      "抬右臂",
+      "举右手",
+      "靠近脸"
+    ],
+    "type": "pose",
+    "parts": [
+      "rightArm"
+    ],
+    "sourceSkeleton": "VRM1 -> VRM0",
+    "frame": null,
+    "requires": [
+      "rightHand",
+      "rightLowerArm",
+      "rightShoulder",
+      "rightUpperArm"
+    ],
+    "contacts": [],
+    "thumbnail": "/api/library-images/raise-right-c97e3a12b67a.png",
+    "file": "raise-right.json",
+    "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/pose/Double%20Peace.json",
+    "sourceSha256": "d18c74ecee40d5783ec64aa9537cf962ab1608ce07c9fb1b261bb8a536637bd1",
+    "sha256": "c97e3a12b67a3e619ba06ccbecde93814a198c90357cd6fa215d4747b90d0c6f",
+    "license": "MIT; upstream copyright notice retained; adaptations documented in CREDITS.md.",
+    "adaptation": "Right arm extracted; VRM1 to VRM0 axis conversion. Other regions excluded.",
+    "testedModels": [
+      "vroid-sample-a"
+    ],
+    "redistribute": true,
+    "part": "rightArm",
+    "affectedLabel": "右臂与掌心方向",
+    "qualification": "reviewed",
+    "visualReview": {
+      "assetSha256": "c97e3a12b67a3e619ba06ccbecde93814a198c90357cd6fa215d4747b90d0c6f",
+      "modelSha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+      "profileSha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+      "reviewedAt": "2026-09-25T21:43:13.899153+00:00",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "scope": "Clothed pose silhouette and visible support inspected on the fixed avatar. Hidden skin/cloth contact and full collisions are not certified."
+    },
+    "distributionVerification": {
+      "basis": "Pinned upstream repository MIT license; notices retained. Local adaptations described in adaptation.",
+      "licenseFile": "licenses/vrm-studio-MIT.txt",
+      "credits": "CREDITS.md"
+    }
+  }
+]

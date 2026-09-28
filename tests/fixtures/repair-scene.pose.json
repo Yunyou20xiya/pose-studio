@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hands-v11-palms-together",
+  "revision": 2,
+  "model": {
+    "id": "vroid-sample-a",
+    "sha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+    "relativePath": "models/AvatorSample_A.vrm"
+  },
+  "profile": {
+    "id": "sample-a-v1",
+    "sha256": "09de648624cacae3356080990f29d8ba6c20d195a9e7938090ffc62448fb5e11",
+    "relativePath": "profiles/primary.json"
+  },
+  "snapshot": {
+    "rotations": {
+      "hips": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "spine": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "chest": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "upperChest": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "neck": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "head": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftEye": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightEye": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftUpperLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLowerLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftFoot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftToes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightUpperLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLowerLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightFoot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightToes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftShoulder": [
+        0.1040068972070849,
+        0.04706434604678657,
+        -0.08797418712602813,
+        0.989559525781071
+      ],
+      "leftUpperArm": [
+        -0.10756135888053903,
+        -0.2575622831682998,
+        0.6736176163379822,
+        0.6843475223335287
+      ],
+      "leftLowerArm": [
+        -0.20012696228575033,
+        -0.7475325313296356,
+        -0.2587923466098141,
+        0.5780751118205756
+      ],
+      "leftHand": [
+        0.18954295402625443,
+        -0.3194773312424273,
+        -0.359411863481615,
+        0.8560553812633214
+      ],
+      "rightShoulder": [
+        0.10400689720708489,
+        -0.04706434604678662,
+        0.08797418712602781,
+        0.9895595257810709
+      ],
+      "rightUpperArm": [
+        -0.10756135888053955,
+        0.25756228316829877,
+        -0.6736176163379819,
+        0.6843475223335294
+      ],
+      "rightLowerArm": [
+        -0.20012696228575025,
+        0.7475325313296352,
+        0.25879234660981343,
+        0.5780751118205766
+      ],
+      "rightHand": [
+        0.18954295402625443,
+        0.3194773312424273,
+        0.359411863481615,
+        0.8560553812633214
+      ],
+      "leftThumbMetacarpal": [
+        0.09983341664682818,
+        0,
+        0,
+        0.9950041652780259
+      ],
+      "leftThumbProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftThumbDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexProximal": [
+        0,
+        -0.013962180339145272,
+        0,
+        0.9999025240093042
+      ],
+      "leftIndexIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleProximal": [
+        0,
+        -0.003490651415223732,
+        0,
+        0.9999939076577904
+      ],
+      "leftMiddleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingProximal": [
+        0,
+        0.005585024570828309,
+        0,
+        0.9999844036286483
+      ],
+      "leftRingIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleProximal": [
+        0,
+        0.013962180339145272,
+        0,
+        0.9999025240093042
+      ],
+      "leftLittleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbMetacarpal": [
+        0.09983341664682818,
+        0,
+        0,
+        0.9950041652780259
+      ],
+      "rightThumbProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexProximal": [
+        0,
+        0.013962180339145272,
+        0,
+        0.9999025240093042
+      ],
+      "rightIndexIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleProximal": [
+        0,
+        0.003490651415223732,
+        0,
+        0.9999939076577904
+      ],
+      "rightMiddleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingProximal": [
+        0,
+        -0.005585024570828309,
+        0,
+        0.9999844036286483
+      ],
+      "rightRingIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleProximal": [
+        0,
+        -0.013962180339145272,
+        0,
+        0.9999025240093042
+      ],
+      "rightLittleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleDistal": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "rootPosition": [
+      0,
+      -9.350000000629688e-8,
+      0
+    ],
+    "rootRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "expressions": {
+      "neutral": 0,
+      "aa": 0,
+      "ih": 0,
+      "ou": 0,
+      "ee": 0,
+      "oh": 0,
+      "blink": 0,
+      "blinkLeft": 0,
+      "blinkRight": 0,
+      "angry": 0,
+      "relaxed": 0,
+      "happy": 0,
+      "sad": 0,
+      "Surprised": 0
+    },
+    "gaze": {
+      "target": [
+        0,
+        1.3711431081383678,
+        4
+      ],
+      "follow": 0,
+      "mode": "point"
+    },
+    "locks": [],
+    "contacts": [
+      {
+        "bone": "leftFoot",
+        "objectId": "floor",
+        "localPoint": [
+          0,
+          -0.0861217565,
+          0
+        ],
+        "worldPoint": [
+          0.0693580941748388,
+          4.163336342344337e-17,
+          -0.03135043655999999
+        ],
+        "mode": "required"
+      },
+      {
+        "bone": "rightFoot",
+        "objectId": "floor",
+        "localPoint": [
+          0,
+          -0.0861217565,
+          0
+        ],
+        "worldPoint": [
+          -0.0693580941748388,
+          4.163336342344337e-17,
+          -0.03135043656000001
+        ],
+        "mode": "required"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "id": "hands-example-palms-together-leftHand",
+      "sourceAsset": "palms-together",
+      "manual": false,
+      "bones": [
+        "leftLowerArm",
+        "leftUpperArm",
+        "leftShoulder",
+        "leftHand",
+        "leftThumbMetacarpal",
+        "leftIndexProximal",
+        "leftMiddleProximal",
+        "leftRingProximal",
+        "leftLittleProximal"
+      ],
+      "expressionNames": []
+    },
+    {
+      "id": "hands-example-palms-together-rightHand",
+      "sourceAsset": "palms-together",
+      "manual": false,
+      "bones": [
+        "rightLowerArm",
+        "rightUpperArm",
+        "rightShoulder",
+        "rightHand",
+        "rightThumbMetacarpal",
+        "rightIndexProximal",
+        "rightMiddleProximal",
+        "rightRingProximal",
+        "rightLittleProximal"
+      ],
+      "expressionNames": []
+    }
+  ],
+  "stage": {
+    "floorY": 0,
+    "chair": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seatWidth": 0.44,
+      "seatDepth": 0.4,
+      "seatHeight": 0.48
+    }
+  },
+  "camera": {
+    "position": [
+      0,
+      1.15,
+      3.6
+    ],
+    "target": [
+      0,
+      0.85,
+      0
+    ],
+    "fov": 35,
+    "width": 1600,
+    "height": 1200
+  },
+  "lighting": {
+    "keyPosition": [
+      -2,
+      4,
+      4
+    ],
+    "keyIntensity": 2.6,
+    "fillIntensity": 2,
+    "background": "#e7e9e2"
+  },
+  "scene": {
+    "version": 1,
+    "floorY": 0,
+    "primary": {
+      "id": "primary",
+      "name": "角色 1",
+      "visible": true,
+      "locked": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "yaw": 0,
+        "scale": 1
+      }
+    },
+    "actors": [],
+    "objects": [],
+    "handInteractions": [
+      {
+        "id": "example-palms-together",
+        "preset": "palms-together",
+        "hands": [
+          {
+            "actorId": "primary",
+            "hand": "leftHand"
+          },
+          {
+            "actorId": "primary",
+            "hand": "rightHand"
+          }
+        ],
+        "position": [
+          -6.938893903907228e-18,
+          1.1801326756,
+          0.23942767752000002
+        ],
+        "yaw": 0,
+        "strength": 0.45
+      }
+    ]
+  }
+}

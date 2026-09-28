@@ -1,0 +1,38 @@
+{
+  "rotations": {
+    "head": [
+      -0.1908089953765448,
+      0,
+      0,
+      0.981627183447664
+    ],
+    "neck": [
+      -0.08715574274765814,
+      0,
+      0,
+      0.9961946980917455
+    ]
+  },
+  "gaze": {
+    "mode": "point",
+    "target": [
+      0,
+      0.6,
+      1
+    ],
+    "follow": 0
+  },
+  "layers": [
+    {
+      "id": "head-down",
+      "sourceAsset": "head-down",
+      "frame": null,
+      "bones": [
+        "head",
+        "neck"
+      ],
+      "expressionNames": [],
+      "manual": false
+    }
+  ]
+}

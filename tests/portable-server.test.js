@@ -1,0 +1,50 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile,mkdtemp,mkdir,cp,rm,readdir,lstat,writeFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,posix,win32,resolve} from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {createHash} from 'node:crypto';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const module=async name=>import(pathToFileURL(join(root,name)));
+const {resolveStaticPath}=await module('server/static-path.js');
+const {startLocalServer}=await module('server/start.js');
+const {createSceneEngine,checkScene}=await module('src/scene/engine.js');
+const {makeCommand,fullScope}=await module('src/pose/state.js');
+const json=async file=>JSON.parse(await readFile(file,'utf8'));
+const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
+
+test('static files work under Windows paths with spaces and Chinese characters',()=>{
+ assert.equal(resolveStaticPath('C:\\Users\\Guest\\Desktop\\角色 工作台','/',win32),'C:\\Users\\Guest\\Desktop\\角色 工作台\\dist\\index.html');
+ assert.equal(resolveStaticPath('D:\\Drawing Tools\\PoseStudio','/assets/main.js',win32),'D:\\Drawing Tools\\PoseStudio\\dist\\assets\\main.js');
+ assert.equal(resolveStaticPath('/tmp/角色 工作台','/assets/main.js',posix),'/tmp/角色 工作台/dist/assets/main.js');
+ for(const paths of [win32,posix])for(const input of ['/../server/http.js','/../../private.txt','/../dist-neighbor/private.txt','/\0'])assert.throws(()=>resolveStaticPath(paths===win32?'C:\\studio':'/tmp/studio',input,paths));
+ assert.throws(()=>resolveStaticPath('C:\\studio','/..\\server\\http.js',win32));
+});
+
+test('clean portable server supports load, edit, save, card persistence and restart',async t=>{
+ const sandbox=await mkdtemp(join(tmpdir(),'PoseStudio 中文 smoke '));t.after(()=>rm(sandbox,{recursive:true,force:true}));
+ for(const name of ['dist','assets','local-data/models'])await cp(join(root,name),join(sandbox,name),{recursive:true});
+ await mkdir(join(sandbox,'local-data/motions'),{recursive:true});await cp(join(root,'local-data/motions'),join(sandbox,'local-data/motions'),{recursive:true});
+ let server=await startLocalServer({root:sandbox,port:0,exportDirectory:join(sandbox,'export')});t.after(async()=>{if(server?.listening)await new Promise(resolve=>server.close(resolve));});
+ const port=server.address().port,url='http://127.0.0.1:'+port;
+ assert.equal((await fetch(url+'/')).status,200);
+ assert.equal((await fetch(url+'/%2e%2e%2fpackage.json')).status,404);
+ let boot=await(await fetch(url+'/api/bootstrap')).json();
+ assert.equal((await fetch(url+'/local-assets/'+boot.model.file)).status,200);
+ for(const motion of boot.catalog)assert.equal((await fetch(url+'/local-motions/'+motion.file)).status,200);
+ const api=async(path,value)=>{const r=await fetch(url+path,{method:value?'POST':'GET',headers:{'Content-Type':'application/json','x-workbench-token':boot.token},...(value?{body:JSON.stringify(value)}:{})});const d=await r.json();assert.ok(r.ok,JSON.stringify(d));return d;};
+ const starter=await json(join(root,'examples/starter.pose.json'));
+ assert.equal((await api('/api/editor/claim',{editorId:'portable-test',project:starter})).granted,true);
+ const engine=createSceneEngine(starter,boot.profile),command=makeCommand(starter,[{kind:'patch',value:{lighting:{...starter.lighting,fillIntensity:1.4}}}],fullScope(starter),'dialogue');
+ assert.equal((await api('/api/commands',command)).status,'queued');assert.equal((await api('/api/editor/next?editorId=portable-test')).id,command.id);
+ const result=engine.apply(command);assert.equal(result.status,'applied');await api('/api/editor/result',{editorId:'portable-test',result,project:engine.read()});
+ assert.equal((await api('/api/projects/save',{})).saved,true);
+ const board=await api('/api/shots'),saved=await api('/api/shots/save',{projectId:starter.projectId,expectedRevision:engine.read().revision,expectedBoardRevision:board.revision,name:'Portable smoke test'});
+ assert.equal((await api('/api/shots')).shots.length,1);
+ assert.equal((await api('/api/combinations')).length,3);
+ await new Promise(resolve=>server.close(resolve));server=await startLocalServer({root:sandbox,port,exportDirectory:join(sandbox,'export')});boot=await(await fetch(url+'/api/bootstrap')).json();
+ assert.equal(boot.startupProject.revision,engine.read().revision);assert.equal((await api('/api/shots')).shots.length,1);
+ assert.equal((await api('/api/state')).project.lighting.fillIntensity,1.4);
+ assert.equal((await api('/api/projects/open',{id:'starter-example'})).project.revision,engine.read().revision);
+});

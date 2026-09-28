@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "projectId": "test-project",
+  "revision": 0,
+  "model": {
+    "id": "vroid-sample-b",
+    "sha256": "7fca4a77fdc60ab2c78a9907430744562626180125fa386eb74fb2ea15c2e518",
+    "relativePath": "models/AvatarSample_B.vrm"
+  },
+  "profile": {
+    "id": "primary",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "relativePath": "profiles/primary.json"
+  },
+  "snapshot": {
+    "rotations": {
+      "hips": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "spine": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "chest": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "upperChest": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "neck": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "head": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftEye": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightEye": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftUpperLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLowerLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftFoot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftToes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightUpperLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLowerLeg": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightFoot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightToes": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftShoulder": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftUpperArm": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLowerArm": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftHand": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightShoulder": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightUpperArm": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLowerArm": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightHand": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftThumbMetacarpal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftThumbProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftThumbDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftIndexDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftMiddleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftRingDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "leftLittleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbMetacarpal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightThumbDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightIndexDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightMiddleDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightRingDistal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleProximal": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleIntermediate": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rightLittleDistal": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "rootPosition": [
+      0,
+      0,
+      0
+    ],
+    "rootRotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "expressions": {
+      "neutral": 0,
+      "aa": 0,
+      "ih": 0,
+      "ou": 0,
+      "ee": 0,
+      "oh": 0,
+      "blink": 0,
+      "blinkLeft": 0,
+      "blinkRight": 0,
+      "angry": 0,
+      "relaxed": 0,
+      "happy": 0,
+      "sad": 0,
+      "Surprised": 0
+    },
+    "gaze": {
+      "target": [
+        0,
+        1.4,
+        4
+      ],
+      "follow": 0,
+      "mode": "point"
+    },
+    "locks": [],
+    "contacts": []
+  },
+  "layers": [],
+  "stage": {
+    "floorY": 0,
+    "chair": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "seatWidth": 0.44,
+      "seatDepth": 0.4,
+      "seatHeight": 0.48
+    }
+  },
+  "camera": {
+    "position": [
+      0,
+      1.3,
+      3.7
+    ],
+    "target": [
+      0,
+      0.85,
+      0
+    ],
+    "fov": 35,
+    "width": 1600,
+    "height": 1200
+  },
+  "lighting": {
+    "keyPosition": [
+      -2,
+      4,
+      4
+    ],
+    "keyIntensity": 2.6,
+    "fillIntensity": 2,
+    "background": "#e7e9e2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "vroid-sample-a",
+  "file": "AvatorSample_A.vrm",
+  "sha256": "2a0ccd84880b03d7b65503d8b6287f7a97f3bb4fab70a5fd0a47b433c97827f5",
+  "bytes": 26781812,
+  "source": "https://raw.githubusercontent.com/ZaberKo/vrm-studio/f919e537171d65c88f8ebfe713f7d1f56aa3a894/public/models/AvatorSample_A.vrm",
+  "meta": {
+    "allowedUserName": "Everyone",
+    "author": "VRoid Project",
+    "commercialUssageName": "Allow",
+    "contactInformation": "https://www.pixiv.net/support.php?mode=select_vroid",
+    "licenseName": "Other",
+    "otherLicenseUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow",
+    "otherPermissionUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow",
+    "sexualUssageName": "Allow",
+    "texture": 6,
+    "title": "AvatarSample_A",
+    "version": "1.0",
+    "violentUssageName": "Allow"
+  },
+  "status": "candidate",
+  "redistribute": true,
+  "distributionVerification": {
+    "checkedAt": "2026-09-28T09:31:53.075Z",
+    "basis": "Unmodified embedded VRM metadata and its linked VRoid Hub license page permit redistribution",
+    "embeddedMetadata": "licenses/AvatarSample_A-embedded-license.json",
+    "licenseText": "licenses/AvatarSample_A-license-page.txt"
+  }
+}
