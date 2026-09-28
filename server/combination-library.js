@@ -1,5 +1,6 @@
 import {readFile,readdir,mkdir,open,rename,unlink} from 'node:fs/promises';
 import {join} from 'node:path';
+import {syncDirectory} from './directory-sync.js';
 import {clone} from '../src/pose/state.js';
 import {checkScene} from '../src/scene/engine.js';
 import {primaryDescriptor} from '../src/scene/state.js';
@@ -39,7 +40,7 @@ export function createCombinationStore({directory,builtinDirectory,profile,baseP
   const ids=group?.memberIds||memberIds,combination=captureCombination(project,{...(group||{}),memberIds:ids,name});validateStoredCombination(combination,baseProject,profile);pngBytes(thumbnail);
   const item={schemaVersion:1,id:crypto.randomUUID(),name:combination.name,createdAt:new Date().toISOString(),combination,thumbnail,detachedLinks:externalLinkCount(project,ids)};
   await mkdir(directory,{recursive:true});const file=join(directory,item.id+'.combination.json'),temporary=file+'.tmp';let handle;
-  try{handle=await open(temporary,'wx',0o600);await handle.writeFile(JSON.stringify(item,null,2)+'\n');await handle.sync();await handle.close();handle=null;await rename(temporary,file);const folder=await open(directory,'r');try{await folder.sync();}finally{await folder.close();}}
+  try{handle=await open(temporary,'wx',0o600);await handle.writeFile(JSON.stringify(item,null,2)+'\n');await handle.sync();await handle.close();handle=null;await rename(temporary,file);await syncDirectory(directory);}
   catch(e){await handle?.close();await unlink(temporary).catch(()=>{});throw e;}return item;
  }};
 }

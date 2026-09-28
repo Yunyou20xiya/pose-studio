@@ -1,4 +1,6 @@
 * text=auto
+# Pose and profile catalogs verify JSON bytes with SHA-256 on every platform.
+*.json text eol=lf
 *.cmd text eol=crlf
 *.sh text eol=lf
 *.png binary

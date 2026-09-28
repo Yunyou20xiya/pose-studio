@@ -5,6 +5,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
+import {fileURLToPath} from 'node:url';
 import {writeFile} from 'node:fs/promises';
 const repair=await import('../server/hand-repair.js').catch(()=>({}));
 const png=await readFile(new URL('./fixtures/repair-64.png',import.meta.url));
@@ -73,7 +74,7 @@ test('preparation stages verified images and preserves conflicting existing inpu
  const directory=await mkdtemp(join(tmpdir(),'pose-hand-prepare-')),run=promisify(execFile);
  try{
   const saved=await repair.saveHandRepairPackage({directory:join(directory,'packages'),readProject:()=>project,request:request()});
-  const input=join(directory,'input'),workflows=join(directory,'workflows'),args=[new URL('../scripts/prepare-hand-repair.mjs',import.meta.url).pathname,'--package',saved.directory,'--input-dir',input,'--workflow-dir',workflows];
+  const input=join(directory,'input'),workflows=join(directory,'workflows'),args=[fileURLToPath(new URL('../scripts/prepare-hand-repair.mjs',import.meta.url)),'--package',saved.directory,'--input-dir',input,'--workflow-dir',workflows];
   const result=JSON.parse((await run(process.execPath,args)).stdout);assert.equal(result.inference,'not-run');
   assert.deepEqual(await readFile(join(result.images,'source.png')),png);
   const graph=JSON.parse(await readFile(result.workflow)),prompt=JSON.parse(await readFile(result.prompt));
@@ -94,7 +95,7 @@ test('preparation never overwrites a conflicting image visible in the ComfyUI se
   const saved=await repair.saveHandRepairPackage({directory:join(directory,'packages'),readProject:()=>project,request:request()});
   const input=join(directory,'input'),workflows=join(directory,'workflows');await mkdir(input);
   const conflict=join(input,saved.id+'-source.png');await writeFile(conflict,'existing user image');
-  const args=[new URL('../scripts/prepare-hand-repair.mjs',import.meta.url).pathname,'--package',saved.directory,'--input-dir',input,'--workflow-dir',workflows];
+  const args=[fileURLToPath(new URL('../scripts/prepare-hand-repair.mjs',import.meta.url)),'--package',saved.directory,'--input-dir',input,'--workflow-dir',workflows];
   await assert.rejects(run(process.execPath,args),/保留原文件/);
   assert.equal(await readFile(conflict,'utf8'),'existing user image');
   assert.deepEqual(await readdir(input),[saved.id+'-source.png']);

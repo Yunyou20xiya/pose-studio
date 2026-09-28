@@ -1,5 +1,6 @@
 import {readFile,readdir,mkdir,open,rename,unlink} from 'node:fs/promises';
 import {join} from 'node:path';
+import {syncDirectory} from './directory-sync.js';
 import {lightingIssues} from '../src/lighting/settings.js';
 const safeId=id=>{if(typeof id!=='string'||!/^[-a-zA-Z0-9_]{1,100}$/.test(id))throw Error('布光标识无效');return id;};
 export function createLightingStore({directory}){
@@ -17,7 +18,7 @@ export function createLightingStore({directory}){
   if(typeof name!=='string'||!name.trim()||name.trim().length>60)throw Error('请填写 1–60 字的布光名称');const errors=lightingIssues(project.lighting);if(errors.length)throw Error(errors.join('；'));
   const item={schemaVersion:1,id:crypto.randomUUID(),name:name.trim(),createdAt:new Date().toISOString(),lighting:structuredClone(project.lighting)};
   await mkdir(directory,{recursive:true});const file=join(directory,item.id+'.light.json'),tmp=file+'.tmp';let handle;
-  try{handle=await open(tmp,'wx',0o600);await handle.writeFile(JSON.stringify(item,null,2)+'\n');await handle.sync();await handle.close();handle=null;await rename(tmp,file);const dir=await open(directory,'r');try{await dir.sync();}finally{await dir.close();}}
+  try{handle=await open(tmp,'wx',0o600);await handle.writeFile(JSON.stringify(item,null,2)+'\n');await handle.sync();await handle.close();handle=null;await rename(tmp,file);await syncDirectory(directory);}
   catch(e){await handle?.close();await unlink(tmp).catch(()=>{});throw e;}return item;
  }};
 }

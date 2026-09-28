@@ -1,5 +1,6 @@
 import {readFile,readdir,mkdir,open,rename,unlink} from 'node:fs/promises';
 import {join} from 'node:path';
+import {syncDirectory} from './directory-sync.js';
 import {capturePose,validateSavedPose} from '../src/assets/pose-library.js';
 const safeId=id=>{if(typeof id!=='string'||!/^[-a-zA-Z0-9_]{1,100}$/.test(id))throw Error('收藏标识无效');return id;};
 export function pngBytes(data){
@@ -15,7 +16,7 @@ export function createPoseStore({directory,profile,refs}){
   if(project.revision!==expectedRevision)throw Error('姿势已改变，请用当前姿势重新收藏');
   const item=capturePose(project,{name,part},profile);validateSavedPose(item,profile,refs);pngBytes(thumbnail);item.thumbnail=thumbnail;
   await mkdir(directory,{recursive:true});const file=join(directory,item.id+'.pose.json'),temporary=file+'.tmp';let handle;
-  try{handle=await open(temporary,'wx',0o600);await handle.writeFile(JSON.stringify(item,null,2)+'\n');await handle.sync();await handle.close();handle=null;await rename(temporary,file);const folder=await open(directory,'r');try{await folder.sync();}finally{await folder.close();}}
+  try{handle=await open(temporary,'wx',0o600);await handle.writeFile(JSON.stringify(item,null,2)+'\n');await handle.sync();await handle.close();handle=null;await rename(temporary,file);await syncDirectory(directory);}
   catch(e){await handle?.close();await unlink(temporary).catch(()=>{});throw e;}return item;
  }};
 }

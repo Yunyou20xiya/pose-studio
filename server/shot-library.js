@@ -1,5 +1,6 @@
 import {readFile,mkdir,open,rename,unlink,copyFile} from 'node:fs/promises';
 import {join} from 'node:path';
+import {syncDirectory} from './directory-sync.js';
 import {clone} from '../src/pose/state.js';
 import {checkScene} from '../src/scene/engine.js';
 import {verifyReferences} from './projects.js';
@@ -35,7 +36,7 @@ export function createShotStore({directory,profile,refs,readProject,verifyProjec
   try{
    handle=await open(temporary,'wx',0o600);await handle.writeFile(JSON.stringify(board)+'\n');await handle.sync();await handle.close();handle=null;
    try{await copyFile(target,target+'.bak');}catch(e){if(e.code!=='ENOENT')throw e;}
-   await rename(temporary,target);const folder=await open(directory,'r');try{await folder.sync();}finally{await folder.close();}
+   await rename(temporary,target);await syncDirectory(directory);
   }catch(e){await handle?.close();await unlink(temporary).catch(()=>{});throw e;}
  }
  function current(request){
